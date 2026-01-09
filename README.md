@@ -16,3 +16,5 @@ Use this as a starting point to complete the WDD 231 personal activity. We will 
 ## Other commands
 
 - `npm run build` to build final files when you are ready to turn in.
+
+site url: https://teal-fox-4bf5e3.netlify.app/

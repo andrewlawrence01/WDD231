@@ -38,30 +38,6 @@ const park = {
       }
     ]
   },
-  addresses: [
-    {
-      postalCode: "82190",
-      city: "Yellowstone National Park",
-      stateCode: "WY",
-      countryCode: "US",
-      provinceTerritoryCode: "",
-      line1: "2 Officers Row",
-      type: "Physical",
-      line3: "",
-      line2: "Yellowstone National Park Headquarters"
-    },
-    {
-      postalCode: "82190-0168",
-      city: "Yellowstone National Park",
-      stateCode: "WY",
-      countryCode: "US",
-      provinceTerritoryCode: "",
-      line1: "PO Box 168",
-      type: "Mailing",
-      line3: "",
-      line2: ""
-    }
-  ],
   directionsInfo:
     "Yellowstone National Park covers nearly 3,500 square miles in the northwest corner of Wyoming (3% of the park is in Montana and 1% is in Idaho). Yellowstone has five entrance stations, and several are closed to regular vehicles during winter. It takes many hours to drive between these entrances, so be sure to check the status of roads at the entrance you intend to use while planning your trip and before you arrive.",
   directionsUrl: "http://www.nps.gov/yell/planyourvisit/directions.htm",

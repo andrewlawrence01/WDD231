@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/details.css">
+  <script type="module" src="js/main1.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Movie Details</h1>
+</header>
+
+<main>
+  <section id="details">
+    <!-- Movie details dynamically inserted here -->
+  </section>
+
+  <section>
+    <h2>Leave a Review</h2>
+    <form id="reviewForm">
+      <label>
+        Name:
+        <input type="text" id="name" required minlength="2">
+      </label>
+
+      <label>
+        Rating:
+        <select id="rating" required>
+          <option value="">Choose</option>
+          <option value="1">1</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+
+      <label>
+        Review:
+        <textarea id="review" required minlength="5"></textarea>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p><a href="moviefinder.html">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

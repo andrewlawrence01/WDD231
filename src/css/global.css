@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+}
+
+main {
+  padding: 1rem;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

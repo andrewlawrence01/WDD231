@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 80%;
+  height: 500px;
+  border: 1px solid;
+  padding: 20px;
+}
+
+/* =========================
+   Activity 1 - Transition
+========================= */
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: all 1s;
+}
+
+.red:hover {
+  border-radius: 50%;
+  background-color: bisque;
+}
+
+/* =========================
+   Activity 2 - Keyframes
+========================= */
+.yellow {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  border-radius: 0 0 50% 50%;
+  animation: rock 2s infinite;
+}
+
+@keyframes rock {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-90deg);
+  }
+}
+
+/* =========================
+   Activity 3 & 4 - Toggle
+========================= */
+.green {
+  width: 100px;
+  height: 40px;
+  background-color: green;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.blue {
+  width: 100px;
+  background-color: blue;
+
+  /* Hidden by default */
+  height: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+/* Class added by JavaScript */
+.show {
+  height: 100px;
+  opacity: 1;
+}

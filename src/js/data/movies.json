@@ -16,5 +16,11 @@
     "title": "Interstellar",
     "genre": "Sci-Fi",
     "description": "Explorers travel through a wormhole in space."
+  },
+  {
+    "id": 4,
+    "title": "The Pursuit of Happyness",
+    "genre": "Drama",
+    "description": "A struggling salesman fights to build a better life."
   }
 ]

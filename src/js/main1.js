@@ -1,7 +1,7 @@
 import { getMovies } from "./api.js";
-import { createMovieCard } from "./ui.js";
+import { createMovieCard, renderReviews } from "./ui.js";
 import { getIdFromURL } from "./utils.js";
-import { saveReview } from "./storage.js";
+import { saveReview, getReviews } from "./storage.js";
 
 const moviesSection = document.getElementById("movies");
 const detailsSection = document.getElementById("details");
@@ -20,10 +20,18 @@ async function loadDetails() {
   const movies = await getMovies();
   const movie = movies.find(m => m.id == id);
 
+  if (!movie) {
+    detailsSection.innerHTML = "<p>Movie not found.</p>";
+    return;
+  }
+
   detailsSection.innerHTML = `
     <h2>${movie.title}</h2>
+    <p><strong>Genre:</strong> ${movie.genre}</p>
     <p>${movie.description}</p>
   `;
+
+  displayReviews(id);
 }
 
 function setupForm() {
@@ -33,19 +41,47 @@ function setupForm() {
   form.addEventListener("submit", e => {
     e.preventDefault();
 
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
     const review = {
-      name: form.name.value,
-      rating: form.rating.value,
-      text: form.review.value
+      name: document.getElementById("name").value,
+      rating: document.getElementById("rating").value,
+      text: document.getElementById("review").value
     };
 
     const id = getIdFromURL();
     saveReview(id, review);
-    alert("Review saved!");
     form.reset();
+    displayReviews(id);
+  });
+}
+
+function displayReviews(id) {
+  const container = document.getElementById("reviewsContainer");
+  const reviews = getReviews(id);
+  container.innerHTML = renderReviews(reviews);
+}
+
+function setupGenreFilter() {
+  const select = document.getElementById("genre");
+  if (!select) return;
+
+  select.addEventListener("change", async () => {
+    const movies = await getMovies();
+    const value = select.value;
+
+    const filtered = value === "all"
+      ? movies
+      : movies.filter(movie => movie.genre === value);
+
+    moviesSection.innerHTML = filtered.map(createMovieCard).join("");
   });
 }
 
 loadMovies();
 loadDetails();
 setupForm();
+setupGenreFilter();

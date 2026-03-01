@@ -4,3 +4,8 @@ export function saveReview(movieId, review) {
   reviews[movieId].push(review);
   localStorage.setItem("reviews", JSON.stringify(reviews));
 }
+
+export function getReviews(movieId) {
+  const reviews = JSON.parse(localStorage.getItem("reviews")) || {};
+  return reviews[movieId] || [];
+}

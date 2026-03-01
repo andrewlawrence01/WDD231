@@ -2,4 +2,16 @@
   background: white;
   padding: 1rem;
   border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+#reviewsContainer {
+  margin-top: 1rem;
+}
+
+.review {
+  background: white;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid var(--primary);
 }

@@ -5,8 +5,8 @@
   <title>Movie Finder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/home1.css">
-  <script type="module" src="js/main1.js"></script>
+  <link rel="stylesheet" href="css/home.css">
+  <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
   <h1>🎬 Movie Finder</h1>
   <nav>
     <ul>
-      <li><a href="moviefinder.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
     </ul>
   </nav>
 </header>
@@ -22,7 +22,7 @@
 <main>
   <section>
     <label for="genre">Filter by Genre:</label>
-    <select id="genre">
+    <select id="genre" aria-label="Filter movies by genre">
       <option value="all">All</option>
       <option value="Action">Action</option>
       <option value="Sci-Fi">Sci-Fi</option>
@@ -31,7 +31,7 @@
   </section>
 
   <section id="movies" class="movie-grid">
-    <!-- TODO: Replace with dynamically generated movie cards -->
+    <!-- Dynamic movie cards will render here -->
   </section>
 </main>
 

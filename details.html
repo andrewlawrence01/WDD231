@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/details.css">
-  <script type="module" src="js/main1.js"></script>
+  <script type="module" src="js/main1.js" defer></script>
 </head>
 <body>
 
@@ -16,38 +16,41 @@
 
 <main>
   <section id="details">
-    <!-- Movie details dynamically inserted here -->
+    <!-- Movie details injected dynamically -->
   </section>
 
   <section>
     <h2>Leave a Review</h2>
-    <form id="reviewForm">
-      <label>
-        Name:
-        <input type="text" id="name" required minlength="2">
-      </label>
+    <form id="reviewForm" novalidate>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" required minlength="2">
 
-      <label>
-        Rating:
-        <select id="rating" required>
-          <option value="">Choose</option>
-          <option value="1">1</option>
-          <option value="5">5</option>
-        </select>
-      </label>
+      <label for="rating">Rating:</label>
+      <select id="rating" required>
+        <option value="">Choose</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
 
-      <label>
-        Review:
-        <textarea id="review" required minlength="5"></textarea>
-      </label>
+      <label for="review">Review:</label>
+      <textarea id="review" required minlength="5"></textarea>
 
-      <button type="submit">Submit</button>
+      <button type="submit">Submit Review</button>
     </form>
+
+    <div id="reviewsContainer">
+      <!-- Saved reviews appear here -->
+    </div>
+
   </section>
 </main>
 
 <footer>
-  <p><a href="moviefinder.html">Back to Home</a></p>
+  <p><a href="index.html">Back to Home</a></p>
 </footer>
 
 </body>

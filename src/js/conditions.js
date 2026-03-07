@@ -1,4 +1,4 @@
-import "../css/style1.css";
+import "../css/style.css";
 import "../css/conditions.css";
 import {
   getParkData,

@@ -1,4 +1,4 @@
-import { getMovies } from "./api.js";
+import { getMovies } from "./api1.js";
 import { createMovieCard, renderReviews } from "./ui.js";
 import { getIdFromURL } from "./utils.js";
 import { saveReview, getReviews } from "./storage.js";

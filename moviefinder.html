@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Movie Finder</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/home1.css">
-  <script type="module" src="js/main1.js" defer></script>
+  <link rel="stylesheet" href="css/home1.css" />
+  <script src="js/main1.js" defer></script>
 </head>
 <body>
+  <main class="container">
+    <h1>🎬 Movie Finder</h1>
 
-<header>
-  <h1>🎬 Movie Finder</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-    </ul>
-  </nav>
-</header>
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search movies..."
+    />
 
-<main>
-  <section>
-    <label for="genre">Filter by Genre:</label>
-    <select id="genre" aria-label="Filter movies by genre">
-      <option value="all">All</option>
-      <option value="Action">Action</option>
-      <option value="Sci-Fi">Sci-Fi</option>
-      <option value="Drama">Drama</option>
-    </select>
-  </section>
+    <div class="controls">
+      <div class="control-group">
+        <label for="genreFilter">Filter by Genre</label>
+        <select id="genreFilter">
+          <option value="All">All Genres</option>
+        </select>
+      </div>
 
-  <section id="movies" class="movie-grid">
-    <!-- Dynamic movie cards will render here -->
-  </section>
-</main>
+      <div class="control-group">
+        <label for="sortFilter">Sort</label>
+        <select id="sortFilter">
+          <option value="default">Default</option>
+          <option value="az">A → Z</option>
+          <option value="za">Z → A</option>
+        </select>
+      </div>
+    </div>
 
-<footer>
-  <p>© 2026 Movie Finder App</p>
-</footer>
-
+    <section id="movieContainer" class="movie-grid"></section>
+  </main>
 </body>
 </html>

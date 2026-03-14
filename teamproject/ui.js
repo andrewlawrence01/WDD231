@@ -11,7 +11,8 @@ export function createMovieCard(movie) {
 }
 
 export function renderReviews(reviews) {
-  if (reviews.length === 0) {
+
+  if(reviews.length === 0){
     return "<p>No reviews yet.</p>";
   }
 
@@ -21,4 +22,5 @@ export function renderReviews(reviews) {
       <p>${review.text}</p>
     </div>
   `).join("");
+
 }

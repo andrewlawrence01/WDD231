@@ -4,7 +4,7 @@
       "title": "Inception",
       "genre": "Sci-Fi",
       "description": "A thief enters dreams to steal secrets.",
-      "poster": "images/inception.jpg"
+      "poster": "images/Inception_(2010)_theatrical_poster.jpg"
     },
     {
       "id": 2,
@@ -239,7 +239,7 @@
     },
     {
       "id": 35,
-      "title": "Fast & Furious",
+      "title": "The Fast & The Furious",
       "genre": "Action",
       "description": "Street racers get involved in crime.",
       "poster": "images/fast-furious.jpg"

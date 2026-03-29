@@ -8,77 +8,58 @@ const sortFilter = document.getElementById("sortFilter");
 let movies = [];
 
 async function loadMovies() {
+  const response = await fetch("./data/movies.json");
+  movies = await response.json();
 
-const response = await fetch("./data/movies.json");
-movies = await response.json();
-
-populateGenres(movies);
-renderMovies(movies);
-
+  populateGenres(movies);
+  renderMovies(movies);
 }
 
-function renderMovies(movieList){
-
-container.innerHTML = movieList
-.map(movie => createMovieCard(movie))
-.join("");
-
+function renderMovies(movieList) {
+  container.innerHTML = movieList
+    .map(movie => createMovieCard(movie))
+    .join("");
 }
 
-function populateGenres(movieList){
+function populateGenres(movieList) {
+  const genres = [...new Set(movieList.map(movie => movie.genre))];
 
-const genres = [...new Set(movieList.map(movie => movie.genre))];
-
-genres.forEach(genre => {
-
-const option = document.createElement("option");
-option.value = genre;
-option.textContent = genre;
-
-genreFilter.appendChild(option);
-
-});
-
+  genres.forEach(genre => {
+    const option = document.createElement("option");
+    option.value = genre;
+    option.textContent = genre;
+    genreFilter.appendChild(option);
+  });
 }
 
-function filterMovies(){
+function filterMovies() {
+  let filtered = [...movies];
 
-let filtered = [...movies];
+  const searchText = searchInput.value.toLowerCase();
+  const genre = genreFilter.value;
+  const sort = sortFilter.value;
 
-const searchText = searchInput.value.toLowerCase();
-const genre = genreFilter.value;
-const sort = sortFilter.value;
+  if (searchText) {
+    filtered = filtered.filter(movie =>
+      movie.title.toLowerCase().includes(searchText)
+    );
+  }
 
-if(searchText){
+  if (genre !== "All") {
+    filtered = filtered.filter(movie =>
+      movie.genre === genre
+    );
+  }
 
-filtered = filtered.filter(movie =>
-movie.title.toLowerCase().includes(searchText)
-);
+  if (sort === "az") {
+    filtered.sort((a, b) => a.title.localeCompare(b.title));
+  }
 
-}
+  if (sort === "za") {
+    filtered.sort((a, b) => b.title.localeCompare(a.title));
+  }
 
-if(genre !== "All"){
-
-filtered = filtered.filter(movie =>
-movie.genre === genre
-);
-
-}
-
-if(sort === "az"){
-
-filtered.sort((a,b)=>a.title.localeCompare(b.title));
-
-}
-
-if(sort === "za"){
-
-filtered.sort((a,b)=>b.title.localeCompare(a.title));
-
-}
-
-renderMovies(filtered);
-
+  renderMovies(filtered);
 }
 
 searchInput.addEventListener("input", filterMovies);

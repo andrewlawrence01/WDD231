@@ -4,349 +4,349 @@
       "title": "Inception",
       "genre": "Sci-Fi",
       "description": "A thief enters dreams to steal secrets.",
-      "poster": "/teamproject/images/Inception_(2010)_theatrical_poster.jpg"
+      "poster": "images/Inception_(2010)_theatrical_poster.jpg"
     },
     {
       "id": 2,
       "title": "The Dark Knight",
       "genre": "Action",
       "description": "Batman faces the Joker.",
-      "poster": "/teamproject/images/The_Dark_Knight_(2008_film).jpg"
+      "poster": "images/The_Dark_Knight_(2008_film).jpg"
     },
     {
       "id": 3,
       "title": "Interstellar",
       "genre": "Sci-Fi",
       "description": "Explorers travel through a wormhole in space.",
-      "poster": "/teamproject/images/Interstellar_film_poster.jpg"
+      "poster": "images/Interstellar_film_poster.jpg"
     },
     {
       "id": 4,
       "title": "The Pursuit of Happyness",
       "genre": "Drama",
       "description": "A struggling salesman fights to build a better life.",
-      "poster": "/teamproject/images/Poster-pursuithappyness.jpg"
+      "poster": "images/Poster-pursuithappyness.jpg"
     },
     {
       "id": 5,
       "title": "Avengers: Endgame",
       "genre": "Action",
       "description": "The Avengers assemble for a final battle.",
-      "poster": "/teamproject/images/Avengers_Endgame_poster.jpg"
+      "poster": "images/Avengers_Endgame_poster.jpg"
     },
     {
       "id": 6,
       "title": "Titanic",
       "genre": "Romance",
       "description": "A love story unfolds aboard the Titanic.",
-      "poster": "/teamproject/images/Titanic_(1997_film)_poster.png"
+      "poster": "images/Titanic_(1997_film)_poster.png"
     },
     {
       "id": 7,
       "title": "Jurassic Park",
       "genre": "Adventure",
       "description": "Scientists bring dinosaurs back to life.",
-      "poster": "/teamproject/images/Jurassic_Park_poster.jpg"
+      "poster": "images/Jurassic_Park_poster.jpg"
     },
     {
       "id": 8,
       "title": "The Lion King",
       "genre": "Animation",
       "description": "A young lion learns about responsibility.",
-      "poster": "/teamproject/images/The_Lion_King_poster.jpg"
+      "poster": "images/The_Lion_King_poster.jpg"
     },
     {
       "id": 9,
       "title": "Spider-Man: No Way Home",
       "genre": "Action",
       "description": "Spider-Man faces villains from other universes.",
-      "poster": "/teamproject/images/Spider-Man_No_Way_Home_poster.jpg"
+      "poster": "images/Spider-Man_No_Way_Home_poster.jpg"
     },
     {
       "id": 10,
       "title": "Frozen",
       "genre": "Animation",
       "description": "Two sisters discover the power of love.",
-      "poster": "/teamproject/images/Frozen_(2013_film)_poster.jpg"
+      "poster": "images/Frozen_(2013_film)_poster.jpg"
     },
     {
       "id": 11,
       "title": "The Matrix",
       "genre": "Sci-Fi",
       "description": "A hacker learns reality is a simulation.",
-      "poster": "/teamproject/images/The_Matrix.png"
+      "poster": "images/The_Matrix.png"
     },
     {
       "id": 12,
       "title": "Forrest Gump",
       "genre": "Drama",
       "description": "A kind man experiences historic events.",
-      "poster": "/teamproject/images/Forrest_Gump_poster.jpg"
+      "poster": "images/Forrest_Gump_poster.jpg"
     },
     {
       "id": 13,
       "title": "Get Out",
       "genre": "Horror",
       "description": "A man uncovers disturbing secrets.",
-      "poster": "/teamproject/images/Get_Out_poster.png"
+      "poster": "images/Get_Out_poster.png"
     },
     {
       "id": 14,
       "title": "The Hangover",
       "genre": "Comedy",
       "description": "Friends retrace a wild night in Vegas.",
-      "poster": "/teamproject/images/Hangoverposter09.jpg"
+      "poster": "images/Hangoverposter09.jpg"
     },
     {
       "id": 15,
       "title": "Top Gun: Maverick",
       "genre": "Action",
       "description": "A veteran pilot trains new recruits.",
-      "poster": "/teamproject/images/Top_Gun_Maverick_Poster.jpg"
+      "poster": "images/Top_Gun_Maverick_Poster.jpg"
     },
     {
       "id": 16,
       "title": "Toy Story",
       "genre": "Animation",
       "description": "Toys come to life when humans leave.",
-      "poster": "/teamproject/images/Toy_Story.jpg"
+      "poster": "images/Toy_Story.jpg"
     },
     {
       "id": 17,
       "title": "Gladiator",
       "genre": "Action",
       "description": "A Roman general seeks revenge.",
-      "poster": "/teamproject/images/Gladiator_(2000_film_poster).png"
+      "poster": "images/Gladiator_(2000_film_poster).png"
     },
     {
       "id": 18,
       "title": "The Godfather",
       "genre": "Crime",
       "description": "The story of a powerful mafia family.",
-      "poster": "/teamproject/images/Godfather_ver1.jpg"
+      "poster": "images/Godfather_ver1.jpg"
     },
     {
       "id": 19,
       "title": "The Shawshank Redemption",
       "genre": "Drama",
       "description": "A prisoner forms a life-changing friendship.",
-      "poster": "/teamproject/images/ShawshankRedemptionMoviePoster.jpg"
+      "poster": "images/ShawshankRedemptionMoviePoster.jpg"
     },
     {
       "id": 20,
       "title": "Iron Man",
       "genre": "Action",
       "description": "A billionaire builds a powerful suit.",
-      "poster": "/teamproject/images/Iron_Man_(2008_film)_poster.jpg"
+      "poster": "images/Iron_Man_(2008_film)_poster.jpg"
     },
     {
       "id": 21,
       "title": "Black Panther",
       "genre": "Action",
       "description": "The king of Wakanda defends his nation.",
-      "poster": "/teamproject/images/Black_Panther_(film)_poster.jpg"
+      "poster": "images/Black_Panther_(film)_poster.jpg"
     },
     {
       "id": 22,
       "title": "Doctor Strange",
       "genre": "Fantasy",
       "description": "A surgeon learns mystical powers.",
-      "poster": "/teamproject/images/Doctor_Strange_(2016_film)_poster.jpg"
+      "poster": "images/Doctor_Strange_(2016_film)_poster.jpg"
     },
     {
       "id": 23,
       "title": "Thor",
       "genre": "Fantasy",
       "description": "The Norse god is banished to Earth.",
-      "poster": "/teamproject/images/Thor_(film)_poster.jpg"
+      "poster": "images/Thor_(film)_poster.jpg"
     },
     {
       "id": 24,
       "title": "Guardians of the Galaxy",
       "genre": "Sci-Fi",
       "description": "Misfits save the galaxy.",
-      "poster": "/teamproject/images/Guardians_of_the_Galaxy_(film)_poster.jpg"
+      "poster": "images/Guardians_of_the_Galaxy_(film)_poster.jpg"
     },
     {
       "id": 25,
       "title": "Finding Nemo",
       "genre": "Animation",
       "description": "A fish searches the ocean for his son.",
-      "poster": "/teamproject/images/Finding_Nemo.jpg"
+      "poster": "images/Finding_Nemo.jpg"
     },
     {
       "id": 26,
       "title": "Up",
       "genre": "Animation",
       "description": "An old man floats his house with balloons.",
-      "poster": "/teamproject/images/Up_(2009_film).jpg"
+      "poster": "images/Up_(2009_film).jpg"
     },
     {
       "id": 27,
       "title": "Coco",
       "genre": "Animation",
       "description": "A boy journeys into the land of the dead.",
-      "poster": "/teamproject/images/Coco_(2017_film)_poster.jpg"
+      "poster": "images/Coco_(2017_film)_poster.jpg"
     },
     {
       "id": 28,
       "title": "Moana",
       "genre": "Adventure",
       "description": "A girl sails across the ocean to save her people.",
-      "poster": "/teamproject/images/Moana_Teaser_Poster.jpg"
+      "poster": "images/Moana_Teaser_Poster.jpg"
     },
     {
       "id": 29,
       "title": "Inside Out",
       "genre": "Animation",
       "description": "A young girl's emotions come to life.",
-      "poster": "/teamproject/images/Inside_Out_(2015_film)_poster.jpg"
+      "poster": "images/Inside_Out_(2015_film)_poster.jpg"
     },
     {
       "id": 30,
       "title": "Joker",
       "genre": "Drama",
       "description": "The origin of Gotham's infamous villain.",
-      "poster": "/teamproject/images/Joker_(2019_film)_poster.jpg"
+      "poster": "images/Joker_(2019_film)_poster.jpg"
     },
     {
       "id": 31,
       "title": "Deadpool",
       "genre": "Comedy",
       "description": "A sarcastic antihero seeks revenge.",
-      "poster": "/teamproject/images/Deadpool_(2016_poster).png"
+      "poster": "images/Deadpool_(2016_poster).png"
     },
     {
       "id": 32,
       "title": "Logan",
       "genre": "Action",
       "description": "An aging Wolverine protects a young mutant.",
-      "poster": "/teamproject/images/Logan_2017_poster.jpg"
+      "poster": "images/Logan_2017_poster.jpg"
     },
     {
       "id": 33,
       "title": "The Batman",
       "genre": "Action",
       "description": "Batman hunts a serial killer.",
-      "poster": "/teamproject/images/The_Batman_(film)_poster.jpg"
+      "poster": "images/The_Batman_(film)_poster.jpg"
     },
     {
       "id": 34,
       "title": "Mission Impossible: Fallout",
       "genre": "Action",
       "description": "Ethan Hunt faces a global threat.",
-      "poster": "/teamproject/images/MI_Fallout.jpg"
+      "poster": "images/MI_Fallout.jpg"
     },
     {
       "id": 35,
       "title": "The Fast & The Furious",
       "genre": "Action",
       "description": "Street racers get involved in crime.",
-      "poster": "/teamproject/images/Fast_and_the_furious_poster.jpg"
+      "poster": "images/Fast_and_the_furious_poster.jpg"
     },
     {
       "id": 36,
       "title": "Cars",
       "genre": "Animation",
       "description": "A race car learns humility.",
-      "poster": "/teamproject/images/Cars_2006.jpg"
+      "poster": "images/Cars_2006.jpg"
     },
     {
       "id": 37,
       "title": "The Incredibles",
       "genre": "Animation",
       "description": "A family of superheroes saves the world.",
-      "poster": "/teamproject/images/The_Incredibles_(2004_animated_feature_film).jpg"
+      "poster": "images/The_Incredibles_(2004_animated_feature_film).jpg"
     },
     {
       "id": 38,
       "title": "Shrek",
       "genre": "Comedy",
       "description": "An ogre rescues a princess.",
-      "poster": "/teamproject/images/Shrek_(2001_animated_feature_film).jpg"
+      "poster": "images/Shrek_(2001_animated_feature_film).jpg"
     },
     {
       "id": 39,
       "title": "Kung Fu Panda",
       "genre": "Animation",
       "description": "A panda becomes a kung fu master.",
-      "poster": "/teamproject/images/Kungfupanda.jpg"
+      "poster": "images/Kungfupanda.jpg"
     },
     {
       "id": 40,
       "title": "A Quiet Place",
       "genre": "Horror",
       "description": "A family survives by staying silent.",
-      "poster": "/teamproject/images/A_Quiet_Place_film_poster.png"
+      "poster": "images/A_Quiet_Place_film_poster.png"
     },
     {
       "id": 41,
       "title": "The Conjuring",
       "genre": "Horror",
       "description": "Investigators face a terrifying haunting.",
-      "poster": "/teamproject/images/The_Conjuring_poster.jpg"
+      "poster": "images/The_Conjuring_poster.jpg"
     },
     {
       "id": 42,
       "title": "It",
       "genre": "Horror",
       "description": "Kids battle a shape-shifting clown.",
-      "poster": "/teamproject/images/It_(2017)_poster.jpg"
+      "poster": "images/It_(2017)_poster.jpg"
     },
     {
       "id": 43,
       "title": "World War Z",
       "genre": "Horror",
       "description": "A man races to stop a zombie pandemic.",
-      "poster": "/teamproject/images/World_War_Z_poster.jpg"
+      "poster": "images/World_War_Z_poster.jpg"
     },
     {
       "id": 44,
       "title": "The Social Network",
       "genre": "Drama",
       "description": "The story behind Facebook.",
-      "poster": "/teamproject/images/The_Social_Network_film_poster.png"
+      "poster": "images/The_Social_Network_film_poster.png"
     },
     {
       "id": 45,
       "title": "La La Land",
       "genre": "Romance",
       "description": "Two artists chase dreams in Los Angeles.",
-      "poster": "/teamproject/images/La_La_Land_(film).png"
+      "poster": "images/La_La_Land_(film).png"
     },
     {
       "id": 46,
       "title": "The Greatest Showman",
       "genre": "Musical",
       "description": "The rise of circus visionary P.T. Barnum.",
-      "poster": "/teamproject/images/The_Greatest_Showman_poster.png"
+      "poster": "images/The_Greatest_Showman_poster.png"
     },
     {
       "id": 47,
       "title": "Harry Potter and the Sorcerer's Stone",
       "genre": "Fantasy",
       "description": "A boy discovers he is a wizard.",
-      "poster": "/teamproject/images/Harry_Potter_and_the_Philosopher's_Stone_banner.jpg"
+      "poster": "images/Harry_Potter_and_the_Philosopher's_Stone_banner.jpg"
     },
     {
       "id": 48,
       "title": "The Lord of the Rings: The Fellowship of the Ring",
       "genre": "Fantasy",
       "description": "A hobbit begins a quest to destroy a ring.",
-      "poster": "/teamproject/images/Lord_Rings_Fellowship_Ring.jpg"
+      "poster": "images/Lord_Rings_Fellowship_Ring.jpg"
     },
     {
       "id": 49,
       "title": "Star Wars: A New Hope",
       "genre": "Sci-Fi",
       "description": "A young hero joins the rebellion.",
-      "poster": "/teamproject/images/StarWarsMoviePoster1977.jpg"
+      "poster": "images/StarWarsMoviePoster1977.jpg"
     },
     {
       "id": 50,
       "title": "The Notebook",
       "genre": "Romance",
       "description": "A timeless love story.",
-      "poster": "/teamproject/images/Posternotebook.jpg"
+      "poster": "images/Posternotebook.jpg"
     }
   ]

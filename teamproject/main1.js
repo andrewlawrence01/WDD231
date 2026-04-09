@@ -8,21 +8,48 @@ const sortFilter = document.getElementById("sortFilter");
 let movies = [];
 
 async function loadMovies() {
-  const response = await fetch("./data/movies.json");
-  movies = await response.json();
+  try {
+    const response = await fetch("./data/movies.json");
 
-  populateGenres(movies);
-  renderMovies(movies);
+    if (!response.ok) {
+      throw new Error("Failed to load movies");
+    }
+
+    movies = await response.json();
+
+    populateGenres(movies);
+    renderMovies(movies);
+
+  } catch (error) {
+    container.innerHTML =
+      `<p class="empty-message">Failed to load movies.</p>`;
+    console.error(error);
+  }
 }
 
 function renderMovies(movieList) {
+
+  // ✅ FIX: show message if empty
+  if (movieList.length === 0) {
+    const searchValue = searchInput.value.trim();
+
+    container.innerHTML = `
+      <p class="empty-message">
+        ${searchValue
+          ? `No results found for "${searchValue}"`
+          : "No movies found."}
+      </p>
+    `;
+    return;
+  }
+
   container.innerHTML = movieList
     .map(movie => createMovieCard(movie))
     .join("");
 }
 
 function populateGenres(movieList) {
-  const genres = [...new Set(movieList.map(movie => movie.genre))];
+  const genres = [...new Set(movieList.map(movie => movie.genre))].sort();
 
   genres.forEach(genre => {
     const option = document.createElement("option");
@@ -35,22 +62,25 @@ function populateGenres(movieList) {
 function filterMovies() {
   let filtered = [...movies];
 
-  const searchText = searchInput.value.toLowerCase();
+  const searchText = searchInput.value.toLowerCase().trim();
   const genre = genreFilter.value;
   const sort = sortFilter.value;
 
-  if (searchText) {
+  // Search
+  if (searchText !== "") {
     filtered = filtered.filter(movie =>
       movie.title.toLowerCase().includes(searchText)
     );
   }
 
+  // Genre
   if (genre !== "All") {
     filtered = filtered.filter(movie =>
       movie.genre === genre
     );
   }
 
+  // Sort
   if (sort === "az") {
     filtered.sort((a, b) => a.title.localeCompare(b.title));
   }

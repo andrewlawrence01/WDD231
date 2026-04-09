@@ -40,7 +40,7 @@
     
     #searchInput:focus{
     border-color:#6366f1;
-    transform:scale(1.01);
+    transform:scale(1.1);
     }
     
     .controls{
@@ -69,7 +69,8 @@
     
     .movie-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    grid-template-columns:repeat(auto-fill,160px);
+    justify-content:center;
     gap:24px;
     }
     
@@ -102,7 +103,7 @@
     
     .movie-poster{
     width:100%;
-    height:80%;
+    height:50%;
     object-fit:cover;
     transition:transform .35s ease;
     }
